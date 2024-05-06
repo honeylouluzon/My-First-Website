@@ -6,98 +6,191 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
+    <link rel="stylesheet" href="home.css" />
+    <style>
+        /* will override external CSS except with !important*/
+
+    </style>
 </head>
 <body>
     <header>
-        <h1>ONLINE PORTFOLIO</h1>
-        <img src="Header.png" alt="Profile Header">
+        <!-- Top/Main Part, Full Screen -->
+        <table id="stickyPane">
+            <tr>
+                <td id="stickyPaneTitleCell">
+                    <h1 id="stickyPaneTitleCell">
+                        <br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong id="stickyPaneTitleCell">Portfolio</strong><br /> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Honey Lou Luzon-Danila
+                    </h1>
+                </td>
+                <td id="stickyPaneMenuCell">
+                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                    <a id="stickyPaneMenuCell" href="#PersonalData">Personal Data</a><br />
+                    <a id="stickyPaneMenuCell" href="#Education">Education</a><br />
+                    <a id="stickyPaneMenuCell" href="#InterestAndHobbies">Interest and Hobbies</a><br />
+                    <a id="stickyPaneMenuCell" href="#MessageMe">Message Me</a>
+                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                </td>
+            </tr>
+        </table>
+        <!-- -------------------------- -->
+        <!-- Freeze Pane Header with Title and menu -->
+        <table id="freezePane">
+            <tr id="freezPaneRow">
+                <td id="freezePaneTitleCell">
+                    <h1 id="freezePaneTitleCell">
+                        &nbsp;&nbsp;<strong id="freezePaneTitleCell">Portfolio</strong><br /> 
+                        &nbsp; Honey Lou Luzon-Danila
+                    </h1>
+                </td>
+                <td id="freezePaneMenuCell">
+                    <br /><br />
+                    <nav id="freezePaneMenuCell">
+                        <a href="#PersonalData">| Personal Data | </a>
+                        <a href="#Education">| Education |</a>
+                        <a href="#InterestAndHobbies">| Interest and Hobbies |</a>
+                        <a href="#MessageMe">| Message Me |</a>
+                    </nav>
+                </td>
+            </tr>
+        </table>
+        <!-- ------------------------- -->
+        <!-- Profile picture and header -->
+        <table> 
+            <!-- The purpose of row 1 is to let the profile pic 
+                not visible in the main part or to make the main 
+                part full screen
+            -->
+            <tr id="ProfilePicRow1">
+            </tr>
+            <!-- The row 2 contains the profile pic -->
+            <tr id="ProfilePicRow2" colspan="2">
+                <td><img src="images/Header.png" alt="Profile Header"></td>
+            </tr>
+        </table>
+        <!-- Profile Pic Label | Name and Profession -->
         <dl>
-            <dt><Strong>HONEY LOU LUZON-DANILA</Strong></dt>
-            <dd>IT Professional</dd>
+            <dt style="font-size: 18px; letter-spacing: 1px;"><Strong>HONEY LOU LUZON-DANILA</Strong></dt>
+            <dd style="letter-spacing: 2px;">IT Professional</dd>
         </dl>
-
-        <nav>
-            <ol type="a">
-                <li><a href="#PersonalData">Personal Data</a></li>
-                <li><a href="#Education">Education</a></li>
-                <li><a href="#InterestAndHobbies">Interest and Hobbies</a></li>
-                <li><a href="#Skills">Skills</a></li>
-            </ol>
-        </nav>
+        <!-- ------------------------- -->
+        
     </header>
-    <hr />
     <main>
-        <section id="PersonalData">
-            <h2>About</h2>
-            <hr />
-            <p>
-                <Strong>Birthplace: </Strong>Panabo City, Davao del Norte, Philippines<br />
-                <Strong>Civil Status: </Strong>Married<br />
-                <Strong>Sex: </Strong>Female<br />
-                <Strong>Citizenship:</Strong> Filipino<br />
-                <Strong>Religion: </Strong>Roman Catholic<br />
-                <Strong>LinkedIn: </Strong><a href="https://www.linkedin.com/in/honeylouluzon/" target="blank">Go to my LinkedIn</a><br />
-            </p>
-        </section>
-        <hr />
-        <section id="Education">
-            <h2>Education</h2>
-            <hr />
-            <dl>
-                <dt><Strong>Master of Information Technology (1 year)</Strong></dt>
-                <dd>University of the Immaculate Conception (Davao City)</dd>
-            </dl>
-    
-            <dl>
-                <dt><strong>Bachelor of Science in Computer Science (2011)</strong></dt>
-                <dd>St. Mary’s College, Inc. (Km. 55, Nat’l Highway, Tagum City)<br />
-                Academic Full Scholar</dd>
-            </dl>    
-        </section>
-        <hr />
-        <section id="InterestAndHobbies">
-            <h2>Interest</h2>
-            <hr />
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Interest</th>
-                        <th>Hobbies</th>
+        <table>
+            <tbody>
+                <section>
+                    <tr id="PersonalData">
+                        <td>
+                            <h2>About</h2>
+                        </td>
                     </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Database Administration</td>
-                        <td>Playing Drums</td>
+                    <tr class="about">
+                        <td class="content">
+                            <dl>
+                                <dt><Strong>Birthplace: </Strong></dt>
+                                <dd>Panabo City, Davao del Norte, Philippines<br /><br /></dd>
+                                <dt><Strong>Civil Status: </Strong></dt>
+                                <dd>Married<br /><br /></dd>
+                                <dt><Strong>Sex: </Strong></dt>
+                                <dd>Female<br /><br /></dd>
+                                <dt><Strong>Citizenship:</Strong></dt>
+                                <dd>Filipino<br /><br /></dd>
+                                <dt><Strong>Religion: </Strong></dt>
+                                <dd>Roman Catholic<br /><br /></dd>
+                            </dl>                       
+                        </td>
                     </tr>
-                    <tr>
-                        <td>Data Science</td>
-                        <td>Music</td>
+                </section>
+                <section>
+                    <tr id="Education">
+                        <td>
+                            <h2>Education</h2>
+                        </td>
                     </tr>
-                    <tr>
-                        <td>Cybersecurity</td>
-                        <td>Nails</td>
+                    <tr class="education">
+                        <td>
+                            <dl>
+                                <dt><Strong>Master of Information Technology (1 year)</Strong></dt><br />
+                                <dd>University of the Immaculate Conception (Davao City)</dd>
+                            </dl>
+                            <br />
+                            <dl>
+                                <dt><strong>Bachelor of Science in Computer Science (2011)</strong></dt><br />
+                                <dd>St. Mary’s College, Inc. (Km. 55, Nat’l Highway, Tagum City)<br />
+                                Academic Full Scholar</dd>
+                            </dl> 
+                        </td>
                     </tr>
-                </tbody>
-            </table>
-        </section>
+                </section>
+
+                <section>
+                    <tr id="InterestAndHobbies">
+                        <td>
+                            <h2>Interest and Hobbies</h2>        
+                        </td>
+                    </tr>
+                    <tr class="interest">
+                        <td>
+                            <table id="interestSection" border="5">
+                                <thead>
+                                    <tr id="interestSection">
+                                        <th id="interestSection">Interest</th>
+                                        <th id="interestSection">Hobbies</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr id="interestSection">
+                                        <td>Database Administration</td>
+                                        <td>Playing Drums</td>
+                                    </tr>
+                                    <tr id="interestSection">
+                                        <td>Data Science</td>
+                                        <td>Music</td>
+                                    </tr>
+                                    <tr id="interestSection">
+                                        <td>Cybersecurity</td>
+                                        <td>Nails</td>
+                                    </tr>
+                                </tbody>
+                            </table>                            
+                        </td>
+                    </tr>
+                </section>
+                <section>
+                    <tr id="MessageMe">
+                        <td>
+                            <h2>Message Me</h2>
+                        </td>
+                    </tr>
+                    <tr class="messageMe">
+                        <td>
+                            <form method="post">
+                                <!-- Usage of for elements: input, textarea, button -->
+                                <label for="name">Name: </label><br />
+                                <input type="text" id="name" name="name" required /> <br />
+                                
+                                <label for="email">Email: </label><br />
+                                <input type="email" id="email" name="email" required /> <br />
+                                <label for="message">Messages: </label><br />        
+                                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                                <br />
+                                <button type="submit">Submit</button>
+                            </form>
+                            <br />
+                            <a href="https://www.linkedin.com/in/honeylouluzon/" target="blank"><img src="images/linkedin.jpg" alt="Linkedin" width="80px"></a>
+                            <a href="https://github.com/honeylouluzon" target="blank"><img src="images/github.jpg" alt="Linkedin" width="125px"></a>
+                            <a href="https://www.youtube.com/@imhny" target="blank"><img src="images/youtube.webp" alt="Linkedin" width="87px"></a>
+                            <br />
+                            <br />
+                        </td>
+                    </tr>
+                </section>
+            </tbody>
+        </table>
     </main>
-    <hr />
     <aside>
-        <h2>Message Me</h2>
-        <hr />
-        <form method="post">
-            <!-- Usage of for elements: input, textarea, button -->
-            <label for="name">Name: </label>
-            <input type="text" id="name" name="name" required /> <br />
-            
-            <label for="email">Email: </label>
-            <input type="email" id="email" name="email" required /> <br />
-            <label for="message">Messages: </label>        
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-            <br />
-            <button type="submit">Submit</button>
-        </form>
     </aside>
     <footer>
         <p>&copy;2024 honeylouluzon. All rights reserved.</p>

@@ -1,0 +1,242 @@
+/* TEXT FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Orbitron:wght@400..900&family=Reenie+Beanie&display=swap');
+/* a 
+.reenie-beanie-regular {
+  font-family: "Reenie Beanie", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jersey+15&family=Orbitron:wght@400..900&family=Reenie+Beanie&display=swap');
+/* 
+.fira-sans-regular {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+.fira-sans-black {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+*/
+
+/* ---------------- */
+
+/* Universal Selector */
+*{
+    font-family: "Fira Sans", sans-serif;
+    color:dimgrey;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    
+}
+/* Common */
+dl{
+    text-indent: 20px;
+}
+table{
+    width: 100%;
+}
+strong{
+    color:#373A36;
+}
+
+/* Header */
+h1{
+    font-family: "Fira Sans", sans-serif;
+    /* The tile is a mixture of black and #D48166. 
+    Portfolio is set to black through strong tag*/
+    color:#D48166;
+}
+h2{
+    color:#D48166;
+
+}
+
+/* Hover */
+dd:hover,td:hover,label:hover{
+    color:black;
+    font-weight: 700;
+}
+h2:hover{
+    color:white;
+}
+
+/* Links */
+a:hover{
+    font-family: "Reenie Beanie", cursive;
+    color:#D48166;
+}
+a{
+    font-family: "Fira Sans", sans-serif;
+    color:black;
+}
+/* ------ */
+
+/* Freeze Pane Header with Title and menu */
+#freezePane {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 80;
+    background-color: white;
+    float: none;
+
+}
+tr[id="freezPaneRow"]{
+    height:40px
+}
+td[id="freezePaneTitleCell"]{
+    width: 50%;
+    line-height: .9;
+}
+h1[id="freezePaneTitleCell"]{
+    font-size: 18px;
+}
+strong[id="freezePaneTitleCell"]{
+    font-size: 50px;
+    font-weight:1000;
+}
+td[id="freezePaneMenuCell"]{
+    width: 60%;
+    font-size: 15px;
+}
+nav[id="freezePaneMenuCell"]{
+    text-align: right;
+}
+
+/* ------------------------------------- */
+
+/* Top/Main Part, Full Screen with title and menu*/
+#stickyPane {
+    position: relative;
+    /* position:-webkit-sticky; */
+    float:left;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: white;
+
+}
+td[id="stickyPaneTitleCell"]{
+    width: 50%;
+    line-height: 0.9;
+}
+h1[id="stickyPaneTitleCell"]{
+    font-size: 55px;
+}
+strong[id="stickyPaneTitleCell"]{
+    font-size: 150px;
+    font-weight:1000;
+}
+td[id="stickyPaneMenuCell"]{
+    width: 50%;
+    line-height: 1.5;
+    text-align:center
+}
+a[id="stickyPaneMenuCell"]{
+    font-size:40px
+}
+/* ---------------------------------- */
+
+/* Profile picture and header */
+tr[id="ProfilePicRow1"]{
+    height:130px;
+}
+/* Header 2 is only a black image used to expend
+the black part header of header1 incase the screen 
+will be expanded. */
+tr[id="ProfilePicRow2"]{
+    background:url('images/Header2.png') repeat-x;
+}
+/* -------------------------- */
+
+/* Section Backgrounds */
+.about{
+    background-image:url('images/bg.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.education{
+    background-image:url('images/bg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.interest{
+    background-image:url('images/bg3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.messageMe{
+    text-align:center;
+    background-color:#E6E2DD;
+}
+/* ----------------------- */
+
+/* Section Content Row*/
+tr[class="about"],
+tr[class="education"],
+tr[class="interest"],
+tr[class="messageMe"]{
+    height:400px;
+}
+/* ------------------- */
+/* Section Title Row */
+tr[id="PersonalData"],
+tr[id="Education"],
+tr[id="InterestAndHobbies"],
+tr[id="MessageMe"]{
+    height:100px;
+    background-color:#373A36;
+    text-align:center;
+    letter-spacing: 10px;
+    font-size: 20px;
+}
+/* ------------------- */
+/* Interest Section Table */
+tr[id="interestSection"]{
+    height:70px;
+    text-align:center;
+}
+table[id="interestSection"]{
+    border-color: #D48166; 
+    border-style:solid;
+    background-color: white; 
+    opacity:70%;
+    width: 60%;
+    margin-left: auto; 
+    margin-right: auto;
+}
+th[id="interestSection"]{
+    color:black;
+    width:50%;
+}
+/* ------------------- */
+
+/* Form */
+label{
+    line-height: 2;
+}
+input,textarea{
+    width:300px
+}
+/* ---- */
+
+/* Footer */
+footer{
+    background-color: #D48166;
+    height: 50px;
+    line-height: 3;
+    text-align:center;
+}
+/* ----- */
+
+
+
