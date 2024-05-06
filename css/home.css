@@ -148,27 +148,27 @@ tr[id="ProfilePicRow1"]{
 the black part header of header1 incase the screen 
 will be expanded. */
 tr[id="ProfilePicRow2"]{
-    background:url('images/Header2.png') repeat-x;
+    background:url('../images/Header2.png') repeat-x;
 }
 /* -------------------------- */
 
 /* Section Backgrounds */
 .about{
-    background-image:url('images/bg.jpg');
+    background-image:url('../images/bg.jpg');
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
 }
 .education{
-    background-image:url('images/bg2.jpg');
+    background-image:url('../images/bg2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
 }
 .interest{
-    background-image:url('images/bg3.jpg');
+    background-image:url('../images/bg3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
